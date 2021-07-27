@@ -41,11 +41,11 @@ if(gameState ==="PLAY"){
 
   ironMan.setCollider("rectangle",0,0,200,500);
     //mario.scale =0.3;
-    bg.velocityY = -4;
-    if (bg.y < 100){
+    bg.velocityY = 4;
+    if (bg.y > 500){
       bg.y=bg.width/4;
     }
-  
+    
     if (keyDown("up")) {
     ironMan.velocityY = -10;
   }
